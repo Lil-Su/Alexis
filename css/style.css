@@ -1,0 +1,1250 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap');
+
+*:root {
+    --white: #fff;
+    --green: #33FFC1;
+    --purple: #AC33FF;
+    --yellow: #FFCA33;
+    --gray: #3f3f3f;
+    --orange: #fc5f45;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    text-decoration: none;
+}
+
+section {
+    padding: 10px 3%;
+}
+
+::selection {
+    background: var(--purple);
+    color: #e0e0e0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html #menu-bar {
+    font-size: 30px;
+    border: 1px solid rgba(0, 0, 0, .2);
+    border-radius: 7px;
+    color: var(--gray);
+    padding: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+}
+
+html #menu-bar:hover {
+    color: var(--purple);
+}
+
+.btn {
+    display: inline-block;
+    font-size: 13px;
+    padding: 15px 38px;
+    border-radius: 160px;
+    color: var(--white);
+    background: #FF7A33;
+    text-transform: uppercase;
+}
+
+.btn:hover {
+    background: var(--gray);
+    color: var(--white);
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.number {
+    font-size: 150px;
+    color: #f0f0f0;
+    text-align: center;
+    height: 120px;
+}
+
+.heading {
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    color: var(--gray);
+    position: relative;
+    bottom: 20px;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 100px;
+    color: var(--gray);
+    text-align: center;
+    position: relative;
+}
+
+
+/* ..........Hedaer.......... */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--white);
+    padding: 1rem 15%;
+    z-index: 999;
+    border-bottom: 2px solid rgba(16, 15, 15, 0.1);
+}
+
+header .logo {
+    font-size: 1.8rem;
+    color: var(--gray);
+}
+
+header .logo span {
+    color: var(--orange);
+    font-size: 1.8rem;
+}
+
+header .navbar a {
+    font-size: 1.1rem;
+    color: var(--gray);
+    padding: 1rem;
+}
+
+header .navbar a:hover {
+    color: var(--orange);
+    text-decoration: underline;
+}
+
+/* ................Home............... */
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.home img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90vh;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.home .inner .content {
+    text-align: center;
+}
+
+.home .inner .content h1 {
+    font-size: 50px;
+    color: var(--white);
+    margin-bottom: 64px;
+    text-transform: uppercase;
+}
+
+.home .inner .content .boxis {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 60px;
+}
+
+.home .inner .content .boxis i {
+    font-size: 30px;
+    margin-bottom: 40px;
+}
+
+.home .inner .content .boxis h4 {
+    font-size: 18px;
+}
+
+.home .inner .content .dollar {
+    color: var(--green);
+}
+
+.home .inner .content .dollar i {
+    border: 3px solid rgb(54, 213, 118);
+    border-radius: 2.5rem;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+.home .inner .content .clock {
+    color: var(--purple);
+}
+
+.home .inner .content .check {
+    color: var(--yellow);
+}
+
+/* ..................About............... */
+
+.about .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    position: relative;
+    margin-right: 390px;
+    margin-bottom: 50px;
+}
+
+
+.about .container .images img {
+    /* width: 555px;
+    height: 700px; */
+    width: 80%;
+}
+
+.about .container .content {
+    background: var(--white);
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    border-bottom: .1px solid var(--green);
+    padding: 65px 20px;
+    line-height: 25px;
+    position: absolute;
+    width: 50%;
+    /* width: 560px;
+    height: 480px; */
+    left: 720px;
+}
+
+.about .container .content h3 {
+    font-size: 42px;
+    color: var(--gray);
+    margin-bottom: 43px;
+    font-weight: bold;
+
+}
+
+.about .container .content p {
+    font-size: 15px;
+    line-height: 25px;
+    color: var(--gray);
+    text-transform: none;
+}
+
+/* ..........................Video........... */
+.video {
+    background: url(../images/video.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.video .container .content {
+    text-align: center;
+}
+
+.video .container .content h3 {
+    font-size: 30px;
+    color: var(--white);
+
+}
+
+.video .container .content i {
+    font-size: 70px;
+    color: var(--green);
+    margin: 39px 0;
+    cursor: pointer;
+}
+
+.video .container .content i:hover {
+    color: var(--white);
+}
+
+.video .container .content p {
+    font-size: 15px;
+    color: var(--white);
+}
+
+/* ....................Focus................. */
+
+.focus {
+    background: #f7f7f7;
+    width: 100%;
+    background-size: cover;
+
+}
+
+.focus .container p {
+    font-size: 18px;
+    margin-bottom: 100px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.focus .container .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.focus .container .inner .box {
+    box-shadow: 0 0 5px rgba(0, 0, 0, .1);
+    width: 21%;
+    padding: 15px 0;
+    border-bottom: 1px solid var(--purple);
+    background: var(--white);
+    margin-bottom: 30px;
+}
+
+.focus .container .inner .box:hover {
+    box-shadow: 0 5px 15px var(--gray);
+}
+
+.focus .container .inner .box i {
+    font-size: 45px;
+    margin-bottom: 33px;
+    color: var(--purple);
+
+}
+
+.focus .container .inner .box h4 {
+    font-size: 20px;
+    margin-bottom: 33px;
+    color: var(--gray);
+}
+
+.focus .container .inner .box p {
+    font-size: 15px;
+    color: #b6b6b6;
+    text-transform: none;
+}
+
+.focus .container .inner .orange {
+    border-bottom: 3px solid var(--orange);
+}
+
+.focus .container .inner .box .orange1 {
+    color: var(--orange);
+}
+
+
+.focus .container .inner .green {
+    border-bottom: 3px solid var(--green);
+}
+
+.focus .container .inner .box .green1 {
+    color: var(--green);
+}
+
+
+.focus .container .inner .purple {
+    border-bottom: 3px solid var(--purple);
+}
+
+.focus .container .inner .box .purple1 {
+    color: var(--purple);
+}
+
+.focus .container .inner .yellow {
+    border-bottom: 3px solid var(--yellow);
+}
+
+.focus .container .inner .box .yellow1 {
+    color: var(--yellow);
+}
+
+
+
+/* ..................Rewiev.................. */
+
+.review {
+    background: url(../images/rewiev.jpg) center no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 70vh;
+    position: relative;
+    text-align: center;
+
+}
+
+.review .container .inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+}
+
+.review .container .inner .box {
+    margin-left: 158px;
+}
+
+.review .container .inner .box i {
+    font-size: 35px;
+    margin-bottom: 26px;
+}
+
+.review .container .inner .box h3 {
+    font-size: 18px;
+    color: var(--white);
+    margin-bottom: 21px;
+}
+
+.review .container .inner .box h4 {
+    color: #a1a1a5;
+    margin-bottom: 30px;
+}
+
+.review .container .inner .purple {
+    color: var(--purple);
+}
+
+.review .container .inner .orange {
+    color: var(--orange);
+}
+
+.review .container .inner .green {
+    color: var(--green);
+}
+
+.review .container .inner .yellow {
+    color: var(--yellow);
+}
+
+.review .container .inner .box .green {
+    color: var(--purple);
+}
+
+/* .............................Portfolio............................ */
+
+.portfolio .container .images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.portfolio .container .images .box {
+    width: 30%;
+    box-shadow: 0 0 .5rem rgba(0, 0, 0, .2);
+}
+
+.portfolio .container .images .box img {
+    width: 100%;
+    height: 18rem;
+}
+.portfolio .container .images .box:hover{
+    box-shadow: 0 5px 15px var(--gray);
+}
+
+/* ............Work............. */
+
+.work .inner {
+    display: block;
+    text-align: center;
+}
+
+.work .container .inner .box {
+    position: relative;
+}
+
+.work .container .inner .box img {
+    width: 556px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.work .container p {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 115px;
+    color: var(--gray);
+    text-transform: none;
+}
+
+.work .container .inner .box .content {
+    box-shadow: 0 1px 15px rgba(0, 0, 0, .1);
+    padding: 25px 50px;
+    width: 460px;
+    height: 300px;
+    background: var(--white);
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.work .container .inner .box .content:hover {
+    box-shadow: 0 1px 20px var(--green);
+    border-bottom: none;
+}
+
+.work .container .inner .box .content h3 {
+    font-size: 22px;
+    color: var(--gray);
+    padding-bottom: 26px;
+}
+
+.work .container .inner .box .content p {
+    font-size: 15px;
+    color: #9a9a9a;
+}
+
+.work .container .inner .box .content span {
+    font-size: 50px;
+    font-weight: bold;
+    color: #e0e0e0;
+    position: absolute;
+    top: 22px;
+    left: 22px;
+}
+
+.work .container .inner .box .project {
+    border-bottom: 2px solid var(--orange);
+    left: 0;
+    top: -53px;
+}
+
+.work .container .inner .box .research {
+    border-bottom: 2px solid var(--green);
+    top: -53px;
+    right: 0;
+}
+
+.work .container .inner .box .design {
+    border-bottom: 2px solid var(--purple);
+    top: -53px;
+    left: 0;
+}
+
+.work .container .inner .box .development {
+    border-bottom: 2px solid var(--yellow);
+    top: -53px;
+    right: 0;
+}
+
+/* .........................Pricing Table................... */
+
+.table {
+    background: #f7f7f7;
+    width: 100%;
+    height: 120vh;
+    margin-top: 100px;
+}
+
+.table .container p {
+    font-size: 18px;
+    margin-bottom: 75px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.table .container .inner {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    gap: 20px;
+}
+
+.table .container .inner .box .btn:hover {
+    background: var(--gray);
+    color: var(--white);
+}
+
+.table .container .inner .box {
+    box-shadow: 0 0 3px rgba(255, 255, 255, .1);
+    margin-left: 30px;
+    background: var(--white);
+    width: 25%;
+    padding: 15px 0;
+}
+
+table .container .inner .box .content {
+    width: 100%;
+}
+
+.table .container .inner .box:hover {
+    box-shadow: 0 0px 7px var(--gray);
+}
+
+.table .container .inner .box .btn {
+    margin-top: 20px;
+}
+
+.table .container .inner .box h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.table .container .inner .box .price {
+    background: var(--orange);
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    right: -32%;
+    margin: 10px 0;
+    border: 7px double var(--white);
+    color: var(--white);
+    padding-top: 23px;
+}
+
+.table .container .inner .box .price h5 {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.table .container .inner .box .price span {
+    font-size: 13px;
+}
+
+.table .container .inner .box .content h4 {
+    font-size: 13px;
+    font-weight: 300;
+    color: var(--gray);
+    line-height: 30px;
+}
+
+table .container .inner .box .content {
+    width: 100%;
+}
+
+.table .container .inner .box .content h4 span {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.table .container .inner .starter {
+    border-top: 2px solid var(--green);
+}
+
+.table .container .inner .starter .btn {
+    border: 2px solid var(--green);
+    color: var(--green);
+    background: none;
+}
+
+.table .container .inner .starter .price {
+    background: var(--green);
+}
+
+.table .container .inner .ultimate {
+    border-top: 2px solid var(--orange);
+}
+
+.table .container .inner .ultimate .btn {
+    border: 2px solid var(--orange);
+    color: var(--orange);
+    background: none;
+}
+
+.table .container .inner .ultimate .price {
+    background: var(--orange);
+}
+
+.table .container .inner .prof {
+    border-top: 2px solid var(--purple);
+}
+
+.table .container .inner .prof .btn {
+    border: 2px solid var(--purple);
+    background: none;
+    color: var(--purple);
+}
+
+.table .container .inner .prof .price {
+    background: var(--purple);
+}
+
+/*.................... Testimonials.................... */
+
+.testimonials {
+    background: url(../images/s3.jpeg) center no-repeat;
+    background-size: cover;
+    height: 140vh;
+    position: relative;
+}
+
+.testimonials .container p {
+    text-align: center;
+    color: var(--white);
+    text-transform: none;
+}
+
+.testimonials .container .inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 50%;
+}
+
+.testimonials .container .inner img {
+    width: 25%;
+}
+
+.testimonials .container .inner .content {
+    background: url(../images/s2.jpg) center no-repeat;
+    background-size: cover;
+    box-shadow: 0 0 1px var(--white);
+    width: 50%;
+    padding: 30px;
+}
+
+.testimonials .container .inner .content p {
+    font-size: 13px;
+    color: var(--gray);
+    margin-bottom: 20px;
+}
+
+.testimonials .container .inner .content h4 {
+    font-size: 18px;
+    font-weight: 400;
+    margin-bottom: 10px;
+
+}
+
+.testimonials .container .inner .content span {
+    font-size: 13px;
+    color: var(--orange);
+}
+
+
+
+
+
+/* ......................... Our blog................... */
+
+.blog .container .inner {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.blog .container .inner .image-content {
+    box-shadow: 0 0 .2rem rgba(0, 0, 0, .1);
+    position: relative;
+    border-bottom: .2rem solid var(--orange);
+
+}
+
+.blog .container .inner .image-content img {
+    width: 100%;
+}
+
+.blog .container .inner .image-content h4 {
+    position: absolute;
+    top: 50%;
+    left: 2rem;
+    font-size: 1.2rem;
+    color: var(--orange);
+}
+
+.blog .container .inner .image-content h4 span {
+    color: var(--white);
+    font-size: .8rem;
+    padding-left: .5rem;
+}
+
+.blog .container .inner .image-content .content {
+    padding: 0 1.5rem;
+
+}
+
+.blog .container .inner .image-content .content h3 {
+    text-transform: none;
+    font-size: 1.3rem;
+    color: var(--gray);
+    font-weight: 500;
+    padding: 1rem 0;
+}
+
+.blog .container .inner .image-content .content p {
+    font-size: .9rem;
+    color: var(--gray);
+    text-transform: none;
+}
+
+.blog .container .inner .image-content .content a {
+    color: var(--gray);
+    font-weight: bold;
+}
+
+.blog .container .inner .boxis .box {
+    margin-bottom: 1rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
+    padding: 1rem;
+}
+
+
+.blog .container .inner .boxis .box h4 {
+    font-size: 1rem;
+    padding-bottom: .5rem;
+}
+
+.blog .container .inner .boxis .box h4 span {
+    font-size: .8rem;
+    padding-left: 1rem;
+}
+
+.blog .container .inner .boxis .box h3 {
+    font-size: 1.1rem;
+    color: var(--gray);
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.blog .container .inner .boxis .box p {
+    font-size: .9rem;
+    color: var(--gray);
+    padding-bottom: 1rem;
+}
+
+.blog .container .inner .boxis .green {
+    border-bottom: .2rem solid var(--green);
+}
+
+.blog .container .inner .boxis .green h4 span {
+    color: var(--green);
+}
+
+.blog .container .inner .boxis .green a {
+    color: var(--green);
+}
+
+.blog .container .inner .boxis .yellow {
+    border-bottom: .2rem solid var(--yellow);
+}
+
+.blog .container .inner .boxis .yellow h4 span {
+    color: var(--yellow);
+}
+
+.blog .container .inner .boxis .yellow a {
+    color: var(--yellow);
+}
+
+.blog .container .inner .boxis .purple {
+    border-bottom: .2rem solid var(--purple);
+}
+
+.blog .container .inner .boxis .purple h4 span {
+    color: var(--purple);
+}
+
+.blog .container .inner .boxis .purple a {
+    color: var(--purple);
+}
+
+
+/* ................. Get in touch............ */
+
+.touch {
+    background: url(../images/forest3.jpg) center no-repeat;
+    background-size: cover;
+    height: 170vh;
+    margin-top: 70px;
+}
+
+.touch .container .inner {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.touch .container .we {
+    font-size: 18px;
+    margin-bottom: 100px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.touch .container .inner form {
+    width: 748px;
+}
+
+
+.touch .container .inner form .inputbox input {
+    width: 305px;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 2px;
+    font-size: 16px;
+    color: var(--gray);
+    text-align: center;
+}
+
+.touch .container .inner form textarea {
+    width: 663px;
+    height: 200px;
+    margin-bottom: 15px;
+    padding: 10px;
+    resize: none;
+    font-size: 16px;
+    border-radius: 2px;
+    text-align: center;
+    color: var(--gray);
+    border-radius: 2px;
+}
+ /* footer */
+
+footer {
+    background: #3f4049;
+    opacity: .9;
+    margin-top: 150px;
+}
+
+footer .container .inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 55px 13px;
+}
+
+footer .container .inner .box {
+    width: 23%;
+}
+
+footer .container .inner h2 {
+    color: var(--white);
+}
+
+footer .container .inner h2 span {
+    color: var(--orange);
+}
+
+footer .container .inner .box h4 {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+footer .container .inner .box p {
+    color: var(--white);
+    font-size: 15px;
+}
+
+footer .container .inner .green {
+    color: var(--green);
+}
+
+footer .container .inner .purple {
+    color: var(--purple);
+}
+
+footer .container .inner .yellow {
+    color: var(--yellow);
+}
+
+footer .container .inner .yellow a i {
+    font-size: 25px;
+    margin-left: 10px;
+    color: #e0e0e0;
+}
+
+footer .container .inner .yellow a:hover {
+    color: var(--purple);
+    color: var(--white);
+}
+
+footer .container .inner h5 {
+    color: var(--orange);
+    font-size: 15px;
+}
+
+footer .container .inner h5 span {
+    color: var(--white);
+    font-size: 12px;
+
+}
+
+
+/* .................................Media.................................... */
+
+@media(max-width: 1200px) {
+    header #menu-bar {
+        display: initial;
+    }
+
+    header .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: var(--gray);
+        border: 1px solid rgba(255, 255, 255 .2);
+        width: 100%;
+        transform: scale(0);
+    }
+
+    header .navbar a {
+        display: block;
+        background: rgba(255, 255, 255, .2);
+        margin: 10px;
+        padding: 10px;
+        border-radius: 20px;
+        color: var(--white);
+    }
+
+    header .navbar.active {
+        transform: scale(1);
+    }
+
+    .about .container .images {
+        width: 60%;
+    }
+
+    .about .container .content {
+        left: 700px;
+    }
+
+    .about .container .content h3 {
+        font-size: 30px;
+
+    }
+
+    .about .container .content p {
+        font-size: 10px;
+    }
+
+    .about .container .number {
+        display: none;
+    }
+
+    .focus .container .inner .box {
+        width: 20%;
+        flex-wrap: wrap;
+    }
+
+    .focus .container .inner .box i {
+        font-size: 30px;
+    }
+
+    .review .container .inner .box i {
+        font-size: 30px;
+    }
+
+    .review .container .inner .box h3 {
+        font-size: 18px;
+    }
+
+    .review .container .inner .box {
+        margin-left: 130px;
+    }
+
+
+}
+
+@media(max-width: 976px) {
+    .about .container .images {
+        width: 40%;
+    }
+
+    .about .container .content {
+        display: none;
+    }
+
+    .focus .container .inner .box h4 {
+        font-size: 15px;
+    }
+
+    .focus .container .inner .box {
+        width: 40%;
+    }
+
+    .review .container .inner .box {
+        width: 20%;
+    }
+
+    .table .container .inner .box h3 {
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .table .container .inner .box .price {
+        right: -28%;
+    }
+
+    .table .container .inner .box .price h5 {
+        font-size: 15px;
+        font-weight: 300;
+    }
+
+    .table .container .inner .box .price span {
+        font-size: 11px;
+    }
+
+    .table .container .inner .box .content h4 {
+        font-size: 12px;
+    }
+
+    .table .container .inner .box .content h4 span {
+        font-size: 10px;
+    }
+
+    .table .container .inner .box .btn {
+        margin-top: 20px;
+    }
+
+    .focus .container .inner .box i {
+        font-size: 38px;
+    }
+
+    .focus .container .inner .box h4 {
+        font-size: 18px;
+    }
+
+    .focus .container .inner .box p {
+        font-size: 12px;
+    }
+
+    .testimonials .container .inner img {
+        width: 30%;
+        height: 40%;
+    }
+
+    .testimonials .container .inner .content {
+        width: 55%;
+    }
+
+    .testimonials .container .inner .content p {
+        font-size: 10px;
+    }
+
+    .testimonials .container .inner .content h4 {
+        font-size: 15px;
+    }
+
+    .testimonials .container .inner .content span {
+        font-size: 12px;
+    }
+}
+
+@media(max-width: 767px) {
+    .home .inner .content h1 {
+        font-size: 30px;
+    }
+
+    .home .inner .content .boxis h4 {
+        font-size: 13px;
+    }
+
+    .home .inner .content .boxis i {
+        font-size: 25px;
+    }
+
+    .about .container .images {
+        width: 40%;
+        text-align: center;
+    }
+
+    .review .container .inner .box {
+        width: 20%;
+    }
+
+    .review .container .inner .box i {
+        font-size: 20px;
+    }
+
+    .review .container .inner .box h3 {
+        font-size: 17px;
+    }
+
+    .review .container .inner .box h4 {
+        font-size: 13px;
+    }
+
+    .work .container .inner .box .content {
+        display: none;
+    }
+
+    .testimonials .container .inner img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .testimonials .container .inner .content {
+        width: 50%;
+    }
+
+    .testimonials .container .inner .content p {
+        font-size: 8px;
+    }
+
+    .testimonials .container .inner .content h4 {
+        font-size: 12px;
+    }
+
+    .testimonials .container .inner .content span {
+        font-size: 10px;
+    }
+
+    .focus .container .inner .box i {
+        font-size: 30px;
+        margin-bottom: 28px;
+    }
+
+    .focus .container .inner .box h4 {
+        font-size: 15px;
+        margin-bottom: 28px;
+    }
+
+    .focus .container .inner .box p {
+        font-size: 10px;
+    }
+
+    .table .container .inner .box .price {
+        right: -21%;
+    }
+
+    .table .container .inner .box .btn {
+        font-size: 11px;
+        padding: 12px 28px;
+    }
+
+    .table .container .inner .box .btn:hover {
+        background: var(--gray);
+        color: var(--white);
+    }
+
+    .about .container .images img {
+        width: 100%;
+    }
+
+    .review .container .inner .box i {
+        font-size: 10px;
+        margin-top: 0;
+    }
+
+    .review .container .inner .box {
+        margin: auto;
+    }
+
+
+}
